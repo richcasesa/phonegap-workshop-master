@@ -1,13 +1,11 @@
 var app = {
 
     findByName: function() {
-findByName: function() {
-    var self = this;
-    this.store.findByName($('.search-key').val(), function(employees) {
-        $('.employee-list').html(self.employeeLiTpl(employees));
-    });
-},
-    },
+	    var self = this;
+	    this.store.findByName($('.search-key').val(), function(employees) {
+	        $('.employee-list').html(self.employeeLiTpl(employees));
+	    });
+	},
 	
 	showAlert: function (message, title) {
 		if (navigator.notification) {
