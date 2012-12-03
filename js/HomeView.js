@@ -2,14 +2,13 @@ var HomeView = function(store) {
 
     this.findByName = function() {
 		store.findByName($('.search-key').val(), function(employees) {
-	        $('.employee-list').html(self.employeeLiTpl(employees));
+	        $('.employee-list').html(HomeView.liTemplate(employees));
 	    });
 	};
 
 	this.render = function() {
 	    this.el.html(HomeView.template());
 		return this;
-	    //$('.search-key').on('keyup', $.proxy(this.findByName, this));
 	};
 
 	this.initialize = function() {
