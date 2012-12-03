@@ -8,7 +8,7 @@ var HomeView = function(store) {
             self.iscroll.refresh();
         } else {
             console.log('New iScroll');
-            self.iscroll = new iScroll($('.scroll', self.el)[0], {hScrollbar: false, vScrollbar: false });
+            self.iscroll = new iScroll($('.scroll', self.el)[0], {hScrollbar: false, vScrollbar: true });
         }		
 	    });
 	};
