@@ -1,7 +1,7 @@
 var app = {
 
 	registerEvents: function() {
-	    var self = this;
+        var self = this;
         // Check of browser supports touch events...
         if (document.documentElement.hasOwnProperty('ontouchstart')) {
             // ... if yes: register touch event listener to change the "selected" state of the item
