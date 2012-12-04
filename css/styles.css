@@ -190,16 +190,16 @@ h2 {
 }
 
 .scroll {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    position: absolute;
-    top: 84px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 84px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-li>a.tappable-active {
-    color: #fff;
-    background-color: #4286f5;
+li>.tappable-active {
+    color: #fff;
+    background-color: #4286f5;
 }
